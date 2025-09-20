@@ -1,0 +1,9 @@
+Some error fixes:
+export CLASSPATH=.:/usr/share/java/java-cup-0.11b-runtime.jar:/usr/share/java/jlex.jar
+
+_2.3
+EAdd. Exp ::= Exp "+" Exp1 ;
+
+Can be read as: EAdd forms an expression of level 0 from an expression of level 0 on the left of + 
+and of level 1 on the right
+
