@@ -1,0 +1,45 @@
+Instructions for BNFC rules:
+-> A program is a sequence of definitions
+
+-> A program may contain comments, which are ignored by the parser. Comments can start with the token // and 
+extend to the end of the line. They can also start with /* and extend to the next */.
+
+-> A function definition has a type, a name, an argument list, and a body. An argument list is 
+a comma-separated list of argument declarations enclosed in parentheses ( and ). A function bodyis a list of statments enclosed 
+in curly brackets { and }. For example:
+
+int foo (double x, int y)
+{
+    return y + 9 ;
+}
+
+-> An argument declarations has a type and an identifier.
+
+-> Any expression followed by a semicolon ; can be used as a statment.
+
+-> Any declarations followed by a semicolon; can be use as a statment. Declarations have one of the following formats:
+
+    - A type and one variable (as in function parameter lists),
+        int i ;
+    - A type and many  variables,
+        int i, j ;
+    - A type and one initialized variable,
+        int i = 6 ;
+
+-> Statments also include:
+    - Statments returning an expression
+        return i + 9 ;
+    - While loops, with an expression in parentheses followedby a statment
+        while (i < 10) i++;
+    - Conditionals: if with an expression in parentheses followed by a statment, else, and another statment
+        if (x > 0) return x ; else return y ;
+    Blocks: any list of statments (including the empty list) between curly brackets. For instance
+        {
+            int i = 2
+            {
+
+            }
+            i++
+        }
+
+-> Pdf
