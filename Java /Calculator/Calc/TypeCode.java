@@ -1,0 +1,1 @@
+public static enum TypeCode {CInt, CDouble, CString, CBool, CVoid} ;

@@ -7,10 +7,13 @@ import java_cup.runtime.*;
 public class Calculator
 {
   public static void main(String args[]) throws Exception {
-    Yylex l = new Yylex(System.in);
-    parser p = new parser(l);
-    Calc.Absyn.Exp parse_tree = p.pExp();
-    System.out.println(parse_tree.eval());
+    // Check page 77
+
+
+    // Yylex l = new Yylex(System.in);
+    // parser p = new parser(l);
+    // Calc.Absyn.Exp parse_tree = p.pExp();
+    // System.out.println(parse_tree.eval());
   }
 
   // Yylex l;
